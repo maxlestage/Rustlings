@@ -136,13 +136,15 @@ build the project with all features (the equivalent of `cargo build --all-featur
 For specific editor instructions:
 
 - **VSCode**: Add a `.vscode/settings.json` file with the following:
+
 ```json
 {
-    "rust-analyzer.cargo.features": ["exercises"]
+  "rust-analyzer.cargo.features": ["exercises"]
 }
 ```
+
 - **IntelliJ-based Editors**: Using the Rust plugin, everything should work
-    by default.
+  by default.
 - _Missing your editor? Feel free to contribute more instructions!_
 
 ## Continuing On
