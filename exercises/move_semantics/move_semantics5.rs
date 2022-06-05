@@ -7,9 +7,21 @@
 
 fn main() {
     let mut x = 100;
+    println!("x vaut : {}", x);
+
     let y = &mut x;
-    let z = &mut x;
+    println!("y vaut : {}", y);
     *y += 100;
+    println!("y vaut : {}", y);
+
+    let z = &mut x;
+    println!("z vaut : {}", z);
     *z += 1000;
+    println!("z vaut : {}", z);
+
+    println!();
+    println!();
+    println!("{}", x);
+
     assert_eq!(x, 1200);
 }
