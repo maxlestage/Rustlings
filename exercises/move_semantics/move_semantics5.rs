@@ -3,25 +3,27 @@
 // adding, changing or removing any of them.
 // Execute `rustlings hint move_semantics5` for hints :)
 
-// I AM NOT DONE
-
 fn main() {
+    //Rajout des commentaires pour comprendre le cheminement.
+
+    // L'opérateur * permet de pointer vers une valeur ou de la Deref
+
     let mut x = 100;
-    println!("x vaut : {}", x);
+    // println!("x vaut : {}", x);
 
     let y = &mut x;
-    println!("y vaut : {}", y);
+    // println!("y vaut : {}", y);
     *y += 100;
-    println!("y vaut : {}", y);
+    // println!("y vaut : {}", y);
 
     let z = &mut x;
-    println!("z vaut : {}", z);
+    // println!("z vaut : {}", z);
     *z += 1000;
-    println!("z vaut : {}", z);
+    // println!("z vaut : {}", z);
 
-    println!();
-    println!();
-    println!("{}", x);
+    // println!();
+    // println!();
+    // println!("{}", x);
 
     assert_eq!(x, 1200);
 }
