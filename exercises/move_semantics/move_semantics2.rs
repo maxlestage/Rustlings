@@ -8,8 +8,6 @@ fn main() {
     let vec0 = Vec::new();
 
     let mut vec1 = fill_vec(vec0.clone());
-    // let mut vec2 = vec1.clone();
-    // vec2.remove(vec1);
 
     // Do not change the following line!
     println!("{} has length {} content `{:?}`", "vec0", vec0.len(), vec0);
