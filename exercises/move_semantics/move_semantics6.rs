@@ -25,7 +25,15 @@ fn get_char(data: &String) -> char {
 
 // Should take ownership
 // fn string_uppercase(mut data: String) {
-// ici on rappel que la valeur d'entrée de data est mutable et on peut alors modifier sa valeur.
+
+/* // Faire ça :
+fn string_uppercase(mut data: String) {
+    data = data.to_uppercase();
+}
+C'est comme si tu faisais:
+let mut data: String = data_dans_main;
+data = data.to_uppercase(); // -> .to_uppercase renvoie une nouvelle valeur de type `String` (et donc ne modifie pas la valeur interne de data)
+ */
 fn string_uppercase(mut data: String) {
     data = data.to_uppercase();
 
