@@ -2,15 +2,13 @@
 // Make me compile! `rustlings hint move_semantics6` for hints
 // You can't change anything except adding or removing references
 
-// I AM NOT DONE
-
 fn main() {
     // let data = "Rust is great!".to_string();
     // Je rends la variable mutable :
     let mut data = "Rust is great!".to_string();
 
     // get_char(data);
-    // Pour modifier la variable depuis la référance, je dois ajouter une référence à data et lui dire quelle est mutable
+    // Pour modifier la variable depuis la référance, je dois ajouter une référence à data --> &data
     // et je dois le faire sur le type attendu de la function fn get_char(data: &String) -> char {..
     get_char(&data);
 
