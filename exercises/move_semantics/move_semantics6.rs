@@ -33,7 +33,10 @@ fn string_uppercase(mut data: String) {
 C'est comme si tu faisais:
 let mut data: String = data_dans_main;
 data = data.to_uppercase(); // -> .to_uppercase renvoie une nouvelle valeur de type `String` (et donc ne modifie pas la valeur interne de data)
- */
+Ce qui veut dire que tu pouvais aussi t'en sortir comme ceci:
+fn string_uppercase(data: String) {
+    let data = data.to_uppercase();
+*/
 fn string_uppercase(mut data: String) {
     data = data.to_uppercase();
 
