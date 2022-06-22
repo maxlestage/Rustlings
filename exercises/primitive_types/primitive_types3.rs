@@ -126,7 +126,7 @@ fn main() {
     // Je passe la variable a à la function :
     push_in_array(&mut a);
 
-    // Condition qui verifie si a est supp à 100 ou non :
+    // Condition qui vérifie si a est supp' à 100 ou non :
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
     } else {
@@ -143,7 +143,7 @@ fn push_in_array(a: &mut Vec<&str>) {
     while i < 100 {
         // je push "test" dans a :
         &a.push("test");
-        // j'affiche la longeure du vecteur a à ce moment :
+        // j'affiche la longueur du vecteur a à ce moment :
         println!("{}", a.len());
 
         // J'incrémente i + 1 :
